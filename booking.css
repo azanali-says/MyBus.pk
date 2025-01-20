@@ -1,0 +1,137 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(3,31,58);
+    color: #333;
+}
+
+header {
+    background: rgb(3,31,58);
+    color: white;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideDown 1.5s ease-out;
+}
+
+h2 {
+    text-align: center;
+}
+
+nav {
+    background: #0047ab;
+    padding: 15px;
+    text-align: center;
+}
+
+.nav-link {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: rgb(3,31,58);
+}
+
+section {
+    padding: 30px;
+    margin: 20px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s forwards;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: auto;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, button {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #0047ab;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.4s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: rgb(3,31,58);
+    transform: scale(1.05);
+}
+
+.price-section {
+    margin: 15px 0;
+    font-size: 18px;
+    color: #0047ab;
+    font-weight: bold;
+}
+
+
+.bus-class-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.bus-class-container label {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border: 3px solid transparent;
+    border-radius: 12px;
+    padding: 10px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.bus-class-container input[type="radio"] {
+    display: none;
+}
+
+.bus-class-container img {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.bus-class-container span {
+    display: block;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.bus-class-container input[type="radio"]:checked + img {
+    border: 4px solid #0047ab;
+}
+
+.bus-class-container label:hover {
+    transform: scale(1.05);
+    border-color: #0047ab;
+}
+
+footer {
+    background: #0047ab;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+

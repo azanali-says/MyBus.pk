@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBus.pk - Book Your Bus Ticket</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <header>
+        <h1>MyBus<span>.Pk</span></h1>
+        <p>Choose your preferred class and enjoy your journey!</p>
+    </header>
+
+    <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact_us.html" class="nav-link">Contact Us</a>
+        
+    </nav>
+
+    <section id="book" class="fade-in">
+        <h2>Book Your Ticket</h2>
+        <form action="#">
+            <label for="from">From:</label>
+            <select id="from" name="from" required>
+                <option value="Karachi">Karachi</option>
+                <option value="Lahore">Lahore</option>
+                <option value="Islamabad">Islamabad</option>
+                <option value="Peshawar">Peshawar</option>
+                <option value="Sukkur">Sukkur</option>
+                <option value="Khairpur">Khairpur</option>
+                <option value="Dadu">Dadu</option>
+                <option value="Larkana">Larkana</option>
+                <option value="Ghotki">Ghotki</option>
+            </select>
+
+            <label for="to">To:</label>
+            <select id="to" name="to" required>
+                <option value="Karachi">Karachi</option>
+                <option value="Lahore">Lahore</option>
+                <option value="Islamabad">Islamabad</option>
+                <option value="Peshawar">Peshawar</option>
+                <option value="Sukkur">Sukkur</option>
+                <option value="Khairpur">Khairpur</option>
+                <option value="Dadu">Dadu</option>
+                <option value="Larkana">Larkana</option>
+                <option value="Ghotki">Ghotki</option>
+            </select>
+
+            <label for="class">Choose Your Bus Class:</label>
+            <div class="bus-class-container">
+                <label>
+                    <input type="radio" name="bus-class" value="Economy" onclick="showPrice('Economy')" required>
+                    <img src="economy.jpg" alt="Economy Class">
+                    <span>Economy</span>
+                </label>
+                <label>
+                    <input type="radio" name="bus-class" value="Business" onclick="showPrice('Business')">
+                    <img src="busnis class.jpg" alt="Business Class">
+                    <span>Business</span>
+                </label>
+                <label>
+                    <input type="radio" name="bus-class" value="First Class" onclick="showPrice('First Class')">
+                    <img src="first class.jpg" alt="First Class">
+                    <span>First Class</span>
+                </label>
+            </div>
+            <div class="price-section">
+                <label>Total Price:</label>
+                <span id="price-display">Which Class Do You prefer</span>
+            </div>
+
+            <label for="date">Travel Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="seats">Number of Seats:</label>
+            <input type="number" id="seats" name="seats" min="1" required>
+
+            <label for="payment">Payment Method:</label>
+            <select id="payment" name="payment" required>
+                <option value="Credit Card">Credit Card</option>
+                <option value="Bank Transfer">Bank Transfer</option>
+                <option value="Cash on Delivery">Cash on Delivery</option>
+            </select>
+
+            <button type="submit" class="animate-button">Confirm Booking</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 MyBus.pk. All rights reserved.</p>
+    </footer>
+    <script>
+        function showPrice(busClass) {
+            const prices = {
+                "Economy": "PKR 1,500",
+                "Business": "PKR 2,500",
+                "First Class": "PKR 4,000"
+            };
+            document.getElementById("price-display").innerText = prices[busClass];
+        }
+    </script>
+</body>
+</html>

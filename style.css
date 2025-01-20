@@ -1,0 +1,234 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url('Bus\ design\ 1.jpg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 20px;
+    align-items: center;
+    color: white;
+    background-color: rgb(3, 31, 58);
+    box-shadow: rgb(3,31,58);
+}
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar ul li {
+    list-style: none;
+}
+.navbar ul li a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 12px;
+}
+.navbar ul li a:hover {
+    background: rgb(7,113,219);
+    border-radius: 5px;
+}
+
+nav .logo{
+    font-size: 1.2rem;
+    display: flex;
+    margin: 10px;
+}
+
+nav .logo span{
+    color: rgb(7,113,219);
+}
+
+nav .links{
+    display: flex;
+}
+
+nav .links a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 10px;
+}
+
+nav .links .link a::before{
+    content: "";
+    position: absolute;
+    left: 0%;
+    bottom:-4px;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(7,113,219);
+    transition: 0.3s linear;
+}
+
+nav .links .link a:hover::before,
+nav .links .link a:hover{
+    width: 100%;
+    color: rgb(7,113,219);
+}
+
+nav .buttons {
+    width: 250px;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btn1{
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(7,113,219);
+    transition: 0.2 linear;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+
+
+.btn1:hover{
+    color: rgb(7,113,219);
+    border: 3px solid rgb(7,113,219);
+    background-color: white;
+    box-shadow:  0 0 10px 4px rgb(7,113,219);
+
+
+}
+
+
+/* Hero Section */
+section {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.content {
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 40%;
+    color: white;
+}
+.content h1{
+    font-size: 4rem;
+    text-shadow: 0 0 7px white;
+}
+
+.content h2{
+    font-size: 4rem;
+    text-shadow: 0 0 7px white;
+}    
+.content h2 span {
+    color: rgb(7,113,219);
+    text-shadow: 3px 2px 3px rgb(7,113,219);
+}
+.content p {
+    width: 60%;
+    margin: 10px;
+}
+
+.content button{
+    width:40%;
+    height:7vh;
+    border-radius: 10px;
+    background-color:rgb(7,113,219);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 20px;
+    transition: 0.2s linear;
+}
+
+.content button:hover{
+    font-size: 1.3ram;
+    background-color: transparent;
+    color: rgb(7,113,219);
+    border: 1px solid rgb(7,113,219);
+}
+
+.services {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgb(3, 31, 58);
+}
+.services h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: white;
+}
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.service-card {
+    background: white;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    width: 280px;
+    transition: transform 0.2s;
+}
+.service-card:hover {
+    transform: scale(1.05);
+    font-size: 1.3ram;
+    background-color: transparent;
+    color: rgb(7,113,219);
+    border: 1px solid rgb(7,113,219);
+}
+.service-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.service-card h3 {
+    margin: 10px 0;
+    color: #333;
+}
+.service-card p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 14px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: black;
+    color: white;
+}
